@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 5.1.4
+Ruby 2.4.2
 
-Things you may want to cover:
+This is a simple bare bones Rails app that is used for quick reference or templating of an app that will manage user profiles and require an authentication solution. The gem of choice is the ever-popular, Devise.
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
