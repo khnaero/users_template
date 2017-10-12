@@ -1,13 +1,25 @@
-<div class="navbar">
+<div class="navbar navbar-inverse navbar-static-top" role="navigation">
   <div class="navbar-inner">
-    <div class="container">
-      <div class="navbar-brand">
-        <%= link_to "Home", root_path %>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand">
+          <%= link_to "Home", root_path %>
+        </div> 
+    </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="<%= root_path %>"><span class="glyphicon glyphicon-user"></span> 
+                        User Profile</a></li>
+          <li><a href="<%= root_path %>"><span class="glyphicon glyphicon-log-in"></span> 
+                        Login</a></li>
+        </ul>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "User Profile", root_path %></li>
-        <li><%= link_to "Join", root_path %></li>
-      </ul>
     </div>
   </div>
 </div>
