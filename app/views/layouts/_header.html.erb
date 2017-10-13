@@ -14,10 +14,17 @@
     </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="<%= root_path %>"><span class="glyphicon glyphicon-user"></span> 
+          <!--<li><a href="<%= root_path %>"><span class="glyphicon glyphicon-user"></span> 
                         User Profile</a></li>
-          <li><a href="<%= root_path %>"><span class="glyphicon glyphicon-log-in"></span> 
+          <li><a href="<%= new_user_session_path %>"><span class="glyphicon glyphicon-log-in"></span> 
                         Login</a></li>
+          <li><%#= link_to "Logout", destroy_user_session_path, method: :delete %>"></li> -->
+          <li><%= link_to "User Profile", "#" %></li>
+          <li><%= link_to raw('<span class="glyphicon glyphicon-log-in"></span> 
+                Login'), new_user_session_path %></li>
+          <li><%= link_to raw('<span class="glyphicon glyphicon-log-out"></span> 
+                Logout'), destroy_user_session_path, method: :delete %></li>
+
         </ul>
       </div>
     </div>
